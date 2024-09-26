@@ -1,4 +1,4 @@
-## Formação Java Web Full-Stack e Spring Boot REST API
+## Curso de HTML5, CSS, JAVASCRIPT Para projetos de FrontEnd e BackEnd Pessoal.
 <div style="sisplay: inline_block">
     <img align="center" alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
     <img align="center" alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
@@ -12,5 +12,6 @@
 </div><br/>
 
 <h5>
-Repositório de exercício da Formação Java Web Full-Stack e Spring Boot REST API
+Repositório de exercício do Curso de HTML, CSS E JAVASCRIPT.</br>
+https://www.udemy.com/course/web-html5-css3-javascript/learn/lecture/17946238#overview
 </h5>
