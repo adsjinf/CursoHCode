@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Script Assíncrono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Script Assíncrono</h1>
+
+    <h2>1. Callback</h2>
+    <button onclick="carregarDadosComCallback()">Carregar dados com Callback</button>
+    <p id="resultado-callback">Aguardando...</p>
+
+    <h2>2. Promises</h2>
+    <button onclick="carregarDadosComPromise()">Carregar dados com Promises</button>
+    <p id="resultado-promise">Aguardando...</p>
+
+    <h2>3. Async/Await</h2>
+    <button onclick="carregarDadosComAsyncAwait()">Carregar dados com Async/Await</button>
+    <p id="resultado-async">Aguardando...</p>
+
+    <script>
+        // 1. Exemplo de Callback
+        function carregarDadosComCallback() {
+            setTimeout(function() {
+                document.getElementById('resultado-callback').innerText = 'Dados carregados com Callback!';
+            }, 2000); // Simulando um tempo de espera de 2 segundos
+        }
+
+        // 2. Exemplo de Promises
+        function carregarDadosComPromise() {
+            const minhaPromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('Dados carregados com Promises!'), 2000);
+            });
+
+            minhaPromise.then(resultado => {
+                document.getElementById('resultado-promise').innerText = resultado;
+            });
+        }
+
+        // 3. Exemplo de Async/Await
+        async function carregarDadosComAsyncAwait() {
+            const minhaPromise = new Promise((resolve) => {
+                setTimeout(() => resolve('Dados carregados com Async/Await!'), 2000);
+            });
+
+            const resultado = await minhaPromise;
+            document.getElementById('resultado-async').innerText = resultado;
+        }
+    </script>
+
+    <!-- 
+Callback: Um temporizador simula uma operação demorada (como carregar dados). Quando o temporizador termina, o texto "Dados carregados com Callback!" é exibido.
+
+Promise: A função carregarDadosComPromise usa uma Promise para realizar a mesma tarefa, exibindo "Dados carregados com Promises!" após 2 segundos.
+
+Async/Await: O código da função carregarDadosComAsyncAwait é mais simples e claro, mas faz a mesma coisa usando async/await.
+    -->
+</body>
+</html>
