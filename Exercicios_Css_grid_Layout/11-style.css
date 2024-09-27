@@ -1,0 +1,40 @@
+@media (min-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 200px; 
+        gap: .5rem;
+    
+        grid-template-areas:
+            "header header header header"
+            "aside  main   main   main"
+            "aside  footer footer footer"
+        ;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.wrapper > * {
+    background-color: royalblue;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.wrapper > *:nth-child(even) {
+    background-color: skyblue;
+}

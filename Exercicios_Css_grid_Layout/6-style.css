@@ -1,0 +1,23 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*gap: 10px;*/
+    grid-auto-rows: 200px;
+    height: 100VH;
+    /*align-items: stretch
+    justify-items: center; /*start, center, end */
+    /*align-items: center;/*start, center, end*/
+}
+
+.wrapper > div:nth-child(2){
+    align-self: center;/*start, center, end */
+    justify-self: center;/*start, center, end */
+}
+.wrapper > div {
+    background-color: royalblue;
+    padding: 1rem;
+}
+
+.wrapper > div:nth-child(even) {
+    background-color: skyblue;
+}
