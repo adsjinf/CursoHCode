@@ -13,7 +13,7 @@
 
 <h5>
 Repositório de exercício do Curso de HTML, CSS E JAVASCRIPT.</br>
-https://www.udemy.com/course/web-html5-css3-javascript/learn/lecture/17946238#overview
-Repositório de Exercício do Curso de CSS Grid Layout
+https://www.udemy.com/course/web-html5-css3-javascript/learn/lecture/17946238#overview</br>
+Repositório de Exercício do Curso de CSS Grid Layout</br>
 https://www.youtube.com/watch?v=q_WV9exilhk&list=PLYgzkrmJnLwpeeGgdADYq3cE2yUwLLTOv&pp=iAQB
 </h5>
