@@ -1,0 +1,19 @@
+.wrapper {
+    display: grid;
+    /*grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(4, 200px) 10%;*/
+    grid-template-columns: minmax(200px, 40%) 200px 200px;
+    /*grid-template-rows: 200px 200px 200px;*/
+    grid-auto-rows: 200px;
+    /*column-gap: 1rem;
+    row-gap: 10px;*/
+    gap: 10px;
+}
+.wrapper div {
+    background-color: royalblue;
+    padding: 1rem;
+}
+
+.wrapper div:nth-child(even) {
+    background-color: skyblue;
+}
