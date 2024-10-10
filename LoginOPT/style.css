@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.login-container {
+    background: linear-gradient(135deg, #843db3, #28222a);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.instruction {
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #ddd;
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.otp-input {
+    width: 40px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #7237a4;
+    color: white;
+}
+
+.otp-input:focus {
+    outline: none;
+    border: 2px solid #9b5fdc;
+}
+
+#confirm-btn {
+    background-color: #9b5fdc;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#confirm-btn:hover {
+    background-color: #b371ec;
+}
+
+.resend {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.resend a {
+    color: #9b5fdc;
+    text-decoration: none;
+}
+
+.resend a:hover {
+    text-decoration: underline;
+}
